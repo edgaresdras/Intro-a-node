@@ -1,11 +1,11 @@
 module.exports = {
-    story: function(personaje, lugar, edad) {
+    story: function(personaje, edad, villano, lugar, hobby, nuevohobby) {
         if(edad > 18 && edad < 80) {
-            return personaje + 'vivia una triste existencia. Llevaba ' + edad + ' en este mundo y nunca habia podido salir de ' + lugar
+            return personaje + ' vivia muy triste en ' + lugar + ' desde hace ' + edad + ' años y solo sabia ' + hobby + ' fue hasta que conocio a ' + villano + ' que aprendio a ' + nuevohobby;
         } else if (edad > 80) {
-            return 'Despues de viajar por ' + edad + ". " + personaje + 'habia encontrado que el secreto de la felicidad es tener una vaca mascota'
+            return personaje + ' vivia despreocupadamente en ' + lugar + ' desde hace ' + edad + ' años y solo sabia ' + hobby + ' fue hasta que conocio a ' + villano + ' que aprendio a ' + nuevohobby; 
         } else {
-            return "habia una vez un niño que se llamaba " + personaje + " y el vivia en " + lugar        
+            return personaje + ' vivia en ' + lugar + ' desde hace ' + edad + ' años y solo sabia ' + hobby + ' fue hasta que conocio a ' + villano + ' que aprendio a ' + nuevohobby;
             }
     }
 }
