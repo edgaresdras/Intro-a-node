@@ -15,7 +15,7 @@ const hobby = "programar";
 // let story = "Hola, mi nombre es " + nombre + ". Y hoy estare " + frase1 + frase2; 
 
 console.log(intro.story(personaje, lugar, edad));
-console.log(intro.story(personaje, villano, lugar, edad, hobby, nuevohobby));
+console.log(final.story(personaje, villano, lugar, edad, hobby, nuevohobby));
 
 console.log(cowsay.say({
     text : "Soy pirata",
