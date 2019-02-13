@@ -1,4 +1,5 @@
 const cowsay = require('cowsay');
+const fs = require ('fs'); // File system nativo de nodejs
 const intro = require('./intro');
 const nudo = require('./nudo');
 const final = require('./final');
@@ -14,9 +15,18 @@ const nuevohobby = "programar";
 // let frase1 = "comiendo pasto electronico";
 // let frase2 = " y tal vez unos cuantos bytes";
 // let story = "Hola, mi nombre es " + nombre + ". Y hoy estare " + frase1 + frase2; 
+ 
+// muchasPalabras // camel case
+// muchasPalabras // dash case
+// muchasPalabras // dash case
 
-console.log(intro.story(personaje, edad, villano, lugar, hobby, nuevohobby));
-console.log(final.story(personaje, villano, lugar, edad, hobby, nuevohobby));
+
+const introHistoria = intro.story(personaje, edad, villano, lugar, hobby, nuevohobby);
+const finalHistoria = final.story(personaje, edad, villano, lugar, hobby, nuevohobby);
+const historiaCompleta = introHistoria + finalHistoria;
+
+console.log(historiaCompleta);
+
 
 console.log(cowsay.say({
     text : "Soy pirata",
