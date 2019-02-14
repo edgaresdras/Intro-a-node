@@ -10,11 +10,6 @@ const lugar = "Centro historico";
 const hobby = "Andar en bici";
 const nuevohobby = "programar";
 
-// let nombre = "Cowgirl";
-// let frase1 = "comiendo pasto electronico";
-// let frase2 = " y tal vez unos cuantos bytes";
-// let story = "Hola, mi nombre es " + nombre + ". Y hoy estare " + frase1 + frase2; 
-
 console.log(intro.story(personaje, edad, villano, lugar, hobby, nuevohobby));
 console.log(final.story(personaje, villano, lugar, edad, hobby, nuevohobby));
 
@@ -24,7 +19,3 @@ console.log(cowsay.say({
     T : "v "
  }));   
 
-
-console.log('Hola');
-console.log('soy un archivo de js');
-console.log(8+9);
