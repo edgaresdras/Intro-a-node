@@ -6,7 +6,7 @@ module.exports = {
             return personaje + ' vivia despreocupadamente en ' + lugar + ' desde hace ' + edad + ' años y solo sabia ' + hobby + ' fue hasta que conocio a ' + villano + ' que aprendio a ' + nuevohobby; 
         } else {
             return personaje + ' vivia en ' + lugar + ' desde hace ' + edad + ' años y solo sabia ' + hobby + ' fue hasta que conocio a ' + villano + ' que aprendio a ' + nuevohobby;
-            }
+        }
     }
 }
 
