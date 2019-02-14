@@ -23,7 +23,7 @@ fs.readFile('personajes.txt', 'utf-8', function(err, contenido) {
     const historiaCompleta = juntarHistoria(personajeRandom);
     // Ver historia
     console.log(historiaCompleta);
-
+    
     fs.writeFile('historia.txt', historiaCompleta, function(err) {
         if (err) {
             throw err;
@@ -32,16 +32,6 @@ fs.readFile('personajes.txt', 'utf-8', function(err, contenido) {
     
 });
 
-// let nombre = "Cowgirl";
-// let frase1 = "comiendo pasto electronico";
-// let frase2 = " y tal vez unos cuantos bytes";
-// let story = "Hola, mi nombre es " + nombre + ". Y hoy estare " + frase1 + frase2; 
- 
-// muchasPalabras // camel case
-// muchasPalabras // dash case
-// muchasPalabras // dash case
-
-// Partes de historia
 function juntarHistoria(personaje) {
     const introHistoria = intro.story(personaje, edad, villano, lugar, hobby, nuevohobby);
     const finalHistoria = final.story(personaje, edad, villano, lugar, hobby, nuevohobby);
@@ -53,9 +43,4 @@ console.log(cowsay.say({
     text : "Soy pirata",
     e : "x-0",
     T : "v "
- }));   
-
-
-console.log('Hola');
-console.log('soy un archivo de js');
-console.log(8+9);
+}));   
